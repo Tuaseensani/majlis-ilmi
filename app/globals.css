@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-emerald: #0F5132;
+  --color-brand-cream: #FAF7F0;
+  --color-brand-gold: #C9A227;
+  --color-brand-dark: #1A1A1A;
+  
+  --font-serif: var(--font-playfair), serif;
+  --font-sans: var(--font-inter), sans-serif;
+}
+
+body {
+  background-color: var(--color-brand-cream);
+  color: var(--color-brand-dark);
+}
+
+/* Apply Urdu font automatically when HTML direction is RTL */
+html[dir="rtl"] body {
+  font-family: var(--font-urdu), sans-serif;
+  line-height: 2.2; /* Nastaliq requires more line-height to look readable */
+}
