@@ -18,8 +18,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BookPage({ params }: { params: { slug: string } }) {
-  const resolvedParams = await params;
+export default async function BookPage({ params }: { params: Promise<{ slug: string }> }) {  const resolvedParams = await params;
   const { slug } = resolvedParams;
   
   const cookieStore = await cookies();
