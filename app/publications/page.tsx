@@ -62,8 +62,7 @@ export default async function PublicationsPage() {
 						<FadeIn key={publication.slug} delay={index * 0.1}>
 							<Link href={`/publications/${publication.slug}`} className="group block h-full">
 								<article className="flex h-full flex-col border border-gray-200 bg-white p-6 transition-all duration-200 hover:-translate-y-1 hover:border-brand-emerald hover:shadow-md">
-									<div className="mb-5 flex size-11 items-center justify-center rounded-md bg-brand-emerald text-white group-hover:bg-brand-gold transition-colors">
-										<Book size={22} aria-hidden="true" />
+									<div className="mb-5 flex size-11 items-center justify-center rounded-md bg-brand-emerald text-white group-hover:bg-brand-gold group-hover:text-brand-emerald transition-colors">										<Book size={22} aria-hidden="true" />
 									</div>
 									<p className="mb-2 text-sm font-semibold uppercase tracking-wide text-brand-emerald">
 										{publication.category} · {publication.year}

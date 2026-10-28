@@ -31,18 +31,26 @@ export default function ContactPage() {
                 <h2 className="mb-8 font-serif text-3xl font-bold text-brand-emerald">{t("infoTitle")}</h2>
                 
                 <div className="space-y-8">
+                  
+                  {/* Location with Google Maps Link */}
                   <div className="flex items-start gap-4">
                     <div className="bg-emerald-50 p-3 rounded-full text-brand-emerald shrink-0">
                       <MapPin size={24} />
                     </div>
                     <div>
                       <h3 className="font-bold text-gray-900 mb-1">{t("location")}</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed whitespace-pre-line">
+                      <a 
+                        href="https://www.google.com/maps?q=24.8836923,67.0471191&z=17&hl=en" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-gray-600 text-sm leading-relaxed hover:text-brand-gold transition-colors whitespace-pre-line"
+                      >
                         {t("locDesc")}
-                      </p>
+                      </a>
                     </div>
                   </div>
 
+                  {/* Hours */}
                   <div className="flex items-start gap-4">
                     <div className="bg-emerald-50 p-3 rounded-full text-brand-emerald shrink-0">
                       <Clock size={24} />
@@ -55,16 +63,20 @@ export default function ContactPage() {
                     </div>
                   </div>
 
+                  {/* Phone Numbers */}
                   <div className="flex items-start gap-4">
                     <div className="bg-emerald-50 p-3 rounded-full text-brand-emerald shrink-0">
                       <Phone size={24} />
                     </div>
                     <div>
                       <h3 className="font-bold text-gray-900 mb-1">{t("phone")}</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed">+92 (021) 123-4567</p>
+                      <p className="text-gray-600 text-sm leading-relaxed" dir="ltr">
+                        {t("phoneNum1")} <br /> {t("phoneNum2")}
+                      </p>
                     </div>
                   </div>
 
+                  {/* Email */}
                   <div className="flex items-start gap-4">
                     <div className="bg-emerald-50 p-3 rounded-full text-brand-emerald shrink-0">
                       <Mail size={24} />

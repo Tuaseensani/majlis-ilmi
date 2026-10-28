@@ -71,15 +71,17 @@
     "reqBookPlace": "e.g., Tafsir al-Kabir by Imam Razi",
     "reqBtn": "Submit Request"
   },
-  "Contact": {
+   "Contact": {
     "title": "Contact Us",
     "subtitle": "Whether you are a researcher, a student, or simply a lover of books, our doors are open to you.",
     "infoTitle": "Get in Touch",
     "location": "Our Location",
-    "locDesc": "Majlis-e-Ilmi Research Library\nKarachi, Pakistan",
+    "locDesc": "Al-Madina Garden, Mezzanine floor,\nNear PSO Pump, Jamshed Road, No.2,\nKarachi, Pakistan",
     "hours": "Library Hours",
     "hoursDesc": "Monday - Saturday: 9:00 AM - 6:00 PM\nSunday: Closed",
     "phone": "Phone",
+    "phoneNum1": "+92 21 349 13 953",
+    "phoneNum2": "+92 21 348 60 959",
     "email": "Email",
     "formTitle": "Send a Message",
     "formDesc": "Have a question about our publications or need to access a specific manuscript? Fill out the form below.",
@@ -95,13 +97,16 @@
   },
     "Footer": {
     "desc": "A research and reference education organization dedicated to preserving intellectual heritage and fostering a culture of reading and scholarship.",
-    "linksTitle": "Quick Links",
+    "followUs": "Follow Us",
+    "quickLinks": "Quick Links",
     "about": "About Us",
     "publications": "Publications",
     "library": "Library Services",
     "contact": "Contact Us",
     "contactTitle": "Contact Info",
-    "address": "Majlis-e-Ilmi Research Library, Karachi, Pakistan",
+    "address": "Al-Madina Garden, Mezzanine floor, Near PSO Pump, Jamshed Road, No.2, Karachi, Pakistan",
     "rights": "Majlis-e-Ilmi Foundation. All rights reserved."
-  }
-}
+  },
+      "followUs": "Follow Us",
+    "quickLinks": "Quick Links"
+} 
