@@ -15,13 +15,8 @@ export default function Home() {
       <Navbar />
 
       <section className="relative flex min-h-[85vh] flex-col justify-center overflow-hidden px-4 pt-24 pb-20">
-        <div 
-          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/hero-bg.jpg')" }}
-        >
-          <div className="absolute inset-0 bg-brand-emerald/95 mix-blend-multiply"></div>
-          <div className="absolute inset-0 bg-black/20"></div>
-        </div>
+                {/* Solid Royal Blue Background */}
+        <div className="absolute inset-0 z-0 bg-brand-emerald"></div>
 
         <div className="relative z-10 mx-auto w-full max-w-5xl text-center text-white">
           <motion.p 

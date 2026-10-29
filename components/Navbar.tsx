@@ -18,9 +18,9 @@ export default function Navbar() {
               alt="Majlis-e-Ilmi Logo" 
               className="w-12 h-12 object-cover rounded-full shadow-sm ring-2 ring-brand-gold group-hover:ring-white transition-all" 
             />
-            <div className="flex flex-col">
-              <span className="font-serif font-bold text-xl text-white leading-tight">
-                Majlis-e-Ilmi
+                       <div className="flex flex-col">
+              <span className="font-serif font-bold text-lg md:text-xl text-white leading-tight">
+                Majlis-e-Ilmi Foundation
               </span>
               <span className="text-xs tracking-widest text-brand-gold uppercase">
                 Since 1931
@@ -28,11 +28,12 @@ export default function Navbar() {
             </div>
           </Link>
 
-          <nav className="hidden md:flex gap-8 font-medium text-white/90">
+                   <nav className="hidden md:flex gap-8 font-medium text-white/90">
             <Link href="/" className="hover:text-brand-gold transition-colors">{t("home")}</Link>
             <Link href="/about" className="hover:text-brand-gold transition-colors">{t("about")}</Link>
             <Link href="/publications" className="hover:text-brand-gold transition-colors">{t("publications")}</Link>
             <Link href="/library" className="hover:text-brand-gold transition-colors">{t("library")}</Link>
+            <Link href="/gallery" className="hover:text-brand-gold transition-colors">{t("gallery")}</Link>
             <Link href="/contact" className="hover:text-brand-gold transition-colors">{t("contact")}</Link>
           </nav>
 

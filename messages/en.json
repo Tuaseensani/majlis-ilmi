@@ -4,6 +4,7 @@
     "about": "About",
     "publications": "Publications",
     "library": "Library",
+    "gallery": "Gallery",
     "contact": "Contact",
     "visit": "Visit Us"
   },
@@ -46,7 +47,7 @@
     "edName": "Executive Director",
     "edOrg": "Majlis-e-Ilmi Foundation"
   },
-  "Library": {
+    "Library": {
     "title": "The Research Library",
     "subtitle": "A sanctuary of knowledge. Home to over 30,000 rare volumes, manuscripts, and scholarly works in Urdu, Arabic, Persian, and English.",
     "c1Title": "Extensive Collection",
@@ -67,6 +68,10 @@
     "reqDesc": "Looking for a specific title or researching a particular subject? Let our librarians know, and we will check our physical archives for you.",
     "reqNameLabel": "Your Name & Institution",
     "reqNamePlace": "e.g., Ali Ahmed, Karachi University",
+    "reqEmailLabel": "Email Address",
+    "reqEmailPlace": "ali@example.com",
+    "reqPhoneLabel": "Phone Number",
+    "reqPhonePlace": "+92 300 1234567",
     "reqBookLabel": "Book Title or Research Topic",
     "reqBookPlace": "e.g., Tafsir al-Kabir by Imam Razi",
     "reqBtn": "Submit Request"
@@ -102,6 +107,7 @@
     "about": "About Us",
     "publications": "Publications",
     "library": "Library Services",
+    "gallery": "Gallery",
     "contact": "Contact Us",
     "contactTitle": "Contact Info",
     "address": "Al-Madina Garden, Mezzanine floor, Near PSO Pump, Jamshed Road, No.2, Karachi, Pakistan",

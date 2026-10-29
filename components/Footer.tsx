@@ -20,8 +20,8 @@ export default function Footer() {
                 className="w-14 h-14 object-cover rounded-full shadow-sm ring-2 ring-brand-gold group-hover:ring-white transition-all" 
               />
               <div className="flex flex-col">
-                <span className="font-serif font-bold text-xl text-white leading-tight">
-                  Majlis-e-Ilmi
+                <span className="font-serif font-bold text-lg md:text-xl text-white leading-tight">
+                  Majlis-e-Ilmi Foundation
                 </span>
                 <span className="text-xs tracking-widest text-brand-gold uppercase">
                   Since 1931
@@ -75,6 +75,7 @@ export default function Footer() {
               <li><Link href="/about" className="text-blue-100/80 hover:text-brand-gold transition-colors">{t("about")}</Link></li>
               <li><Link href="/publications" className="text-blue-100/80 hover:text-brand-gold transition-colors">{t("publications")}</Link></li>
               <li><Link href="/library" className="text-blue-100/80 hover:text-brand-gold transition-colors">{t("library")}</Link></li>
+              <li><Link href="/gallery" className="text-blue-100/80 hover:text-brand-gold transition-colors">{t("gallery")}</Link></li>
               <li><Link href="/contact" className="text-blue-100/80 hover:text-brand-gold transition-colors">{t("contact")}</Link></li>
             </ul>
           </div>
