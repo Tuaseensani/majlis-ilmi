@@ -1,52 +1,63 @@
 "use client";
 
 import Link from "next/link";
-import LanguageToggle from "./LanguageToggle";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
+import PillNav from "./PillNav";
+import LanguageToggle from "./LanguageToggle";
 
 export default function Navbar() {
   const t = useTranslations("Navbar");
+  const pathname = usePathname();
+
+  const navItems = [
+    { label: t("home"), href: "/" },
+    { label: t("about"), href: "/about" },
+    { label: t("publications"), href: "/publications" },
+    { label: t("library"), href: "/library" },
+    { label: t("gallery"), href: "/gallery" },
+    { label: t("contact"), href: "/contact" },
+  ];
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-brand-emerald shadow-md border-b border-white/10">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between">
-          
-          <Link href="/" className="flex items-center gap-3 group">
+    <header className="sticky top-0 z-50 w-full bg-brand-emerald shadow-md">
+            <div className="relative mx-auto flex h-24 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        
+        {/* Left: Big Custom Logo */}
+        <div className="flex items-center">
+          <Link href="/">
             <img 
               src="/logo.jpeg" 
-              alt="Majlis-e-Ilmi Logo" 
-              className="w-12 h-12 object-cover rounded-full shadow-sm ring-2 ring-brand-gold group-hover:ring-white transition-all" 
+              alt="Logo" 
+              className="w-16 h-16 object-cover rounded-full border-2 border-brand-gold shadow-lg hover:scale-105 transition-transform" 
             />
-                       <div className="flex flex-col">
-              <span className="font-serif font-bold text-lg md:text-xl text-white leading-tight">
-                Majlis-e-Ilmi Foundation
-              </span>
-              <span className="text-xs tracking-widest text-brand-gold uppercase">
-                Since 1931
-              </span>
-            </div>
           </Link>
-
-                   <nav className="hidden md:flex gap-8 font-medium text-white/90">
-            <Link href="/" className="hover:text-brand-gold transition-colors">{t("home")}</Link>
-            <Link href="/about" className="hover:text-brand-gold transition-colors">{t("about")}</Link>
-            <Link href="/publications" className="hover:text-brand-gold transition-colors">{t("publications")}</Link>
-            <Link href="/library" className="hover:text-brand-gold transition-colors">{t("library")}</Link>
-            <Link href="/gallery" className="hover:text-brand-gold transition-colors">{t("gallery")}</Link>
-            <Link href="/contact" className="hover:text-brand-gold transition-colors">{t("contact")}</Link>
-          </nav>
-
-          <div className="flex items-center gap-6">
-            <LanguageToggle />
-            <Link 
-              href="/contact" 
-              className="hidden md:flex bg-brand-gold text-brand-emerald px-6 py-2.5 rounded-md font-bold hover:bg-[#e0b53f] transition-all shadow-sm"
-            >
-              {t("visit")}
-            </Link>
-          </div>
         </div>
+
+        {/* Center: PillNav (Without the logo) */}
+        <div className="absolute left-1/2 -translate-x-1/2">
+          <PillNav
+            items={navItems}
+            activeHref={pathname}
+            // Removed the logo prop completely so it's just the pills
+            linkComponent={Link}
+            theme="dark" 
+            size="md"
+            itemStyle="pill"
+            hoverEffect="glide"
+            indicator="pill"
+            highlightColor="#F2C94C" 
+            highlightTextColor="#002B7F" 
+            barColor="rgba(0, 43, 127, 0.4)" 
+            textColor="#ffffff"
+          />
+        </div>
+
+        {/* Right: Language Toggle */}
+        <div className="ml-auto">
+          <LanguageToggle />
+        </div>
+
       </div>
     </header>
   );
