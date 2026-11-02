@@ -20,11 +20,8 @@
     "stat3": "Researchers Served",
     "stat4": "Years of Service",
     "legacyTitle": "A Legacy of Scholarship Since 1931",
+    "tagline": "Research and Reference Education",
     "legacyDesc": "Originally established in India, the foundation relocated to Pakistan in 1948. Today, we stand as one of the country's most respected centers of learning, housing rare manuscripts in Urdu, Arabic, Persian, and English."
-  },
-  "Publications": {
-    "headerTitle": "Our Publications",
-    "headerDesc": "Explore over 48 scholarly works published by the Majlis-e-Ilmi Foundation, recognized as authoritative references across Pakistan."
   },
   "About": {
     "title": "Our Heritage",
@@ -47,7 +44,42 @@
     "edName": "Executive Director",
     "edOrg": "Majlis-e-Ilmi Foundation"
   },
-    "Library": {
+  "AboutPage": {
+    "missionTitle": "Mission, Vision & Objectives",
+    "missionText": "Majlis-e-Ilmi is a public academic and research library dedicated to providing selfless and free educational services. The institution welcomes every seeker of knowledge, regardless of gender, academic background, intellectual orientation, geographical location, or social affiliation. Whether they are students of religious seminaries, university scholars, researchers, academics, or independent learners, Majlis-e-Ilmi offers access to its rich collection of books and scholarly resources without any fee or financial obligation. We firmly believe that knowledge is a shared heritage of humanity and that access to knowledge is a fundamental right of every individual.",
+    "objectivesTitle": "Our Objectives",
+    "obj1Title": "Equal Access to Knowledge",
+    "obj1Desc": "To ensure that individuals of all ages, backgrounds, and social groups have equal and non-discriminatory access to educational and research resources.",
+    "obj2Title": "Promotion of a Reading Culture",
+    "obj2Desc": "To cultivate a love for books, encourage regular reading habits, and nurture intellectual curiosity and scholarly engagement within society.",
+    "obj3Title": "Encouragement of Research",
+    "obj3Desc": "To support students, teachers, researchers, and scholars by providing access to authentic references, reliable sources, and valuable research materials.",
+    "obj4Title": "Academic and Intellectual Guidance",
+    "obj4Desc": "To assist readers in locating trustworthy and relevant information according to their academic interests, research needs, and intellectual pursuits.",
+    "obj5Title": "Preservation of Intellectual Heritage",
+    "obj5Desc": "To preserve rare books, manuscripts, archival materials, and other valuable scholarly resources, ensuring that they remain accessible to future generations.",
+    "obj6Title": "Access to Digital Information",
+    "obj6Desc": "To embrace modern technologies and gradually expand access to online books, digital archives, academic databases, and other electronic learning resources.",
+    "obj7Title": "Promotion of Critical Thinking",
+    "obj7Desc": "To foster analytical, critical, and creative thinking skills through reading, research, discussion, and intellectual exploration.",
+    "obj8Title": "Strengthening Academic Engagement",
+    "obj8Desc": "To serve as a platform for seminars, study circles, scholarly discussions, book reviews, and other academic activities that encourage collaboration.",
+    "obj9Title": "Moral and Intellectual Development",
+    "obj9Desc": "To provide educational resources that promote ethical values, tolerance, constructive dialogue, mutual respect, and a strong sense of social responsibility.",
+    "obj10Title": "A Center for Lifelong Learning",
+    "obj10Desc": "To establish the library as a dynamic learning environment where individuals can continue to acquire knowledge, develop skills, and pursue intellectual growth.",
+    "commitmentTitle": "Our Commitment",
+    "commitmentText": "Majlis-e-Ilmi is committed to expanding access to knowledge, supporting academic research, promoting a culture of reading, and providing authentic, comprehensive, and easily accessible educational resources. We aspire to create an environment where knowledge is not merely preserved, but actively shared, explored, and transformed into a catalyst for intellectual development, academic excellence, and social progress.",
+    "boardTitle": "Board of Directors",
+    "boardDesc": "The visionary leadership guiding the Majlis-e-Ilmi Foundation.",
+    "d1Title": "Executive Director",
+    "d1Name": "Dr. Muhammad Aamir Tuaseen",
+    "d2Title": "Member / Director",
+    "d2Name": "Dr. Syed Aziz Ur Rehman",
+    "d3Title": "Member / Director",
+    "d3Name": "Dr. Muhammad Jameel Bandhani"
+  },
+  "Library": {
     "title": "The Research Library",
     "subtitle": "A sanctuary of knowledge. Home to over 30,000 rare volumes, manuscripts, and scholarly works in Urdu, Arabic, Persian, and English.",
     "c1Title": "Extensive Collection",
@@ -56,14 +88,6 @@
     "c2Desc": "Over 700 university faculty and researchers have successfully completed M.Phil and Ph.D. projects using our resources.",
     "c3Title": "Open to All",
     "c3Desc": "We welcome scholars, students, writers, and researchers from all backgrounds and schools of thought.",
-    "guideTitle": "Library Guidelines",
-    "guideDesc": "To preserve our rare manuscripts for future generations, we ask all visitors to adhere to the following guidelines:",
-    "g1": "Valid CNIC or University ID is required for entry.",
-    "g2": "Bags, briefcases, and coats must be left at the reception desk.",
-    "g3": "Only pencils and paper are allowed in the reading rooms (no pens).",
-    "g4": "Books must be handled with care; rare manuscripts may require gloves.",
-    "g5": "Absolute silence must be maintained in the research areas.",
-    "g6": "Photography of rare manuscripts is strictly prohibited without prior permission.",
     "reqTitle": "Request a Book",
     "reqDesc": "Looking for a specific title or researching a particular subject? Let our librarians know, and we will check our physical archives for you.",
     "reqNameLabel": "Your Name & Institution",
@@ -76,7 +100,22 @@
     "reqBookPlace": "e.g., Tafsir al-Kabir by Imam Razi",
     "reqBtn": "Submit Request"
   },
-   "Contact": {
+  "LibraryPage": {
+    "legacyTitle": "A Legacy of Scholarship",
+    "p1": "The Majlis-e-Ilmi Foundation was originally established in 1931. Following the creation of Pakistan, the institution was relocated from India to Pakistan in 1948. Since then, it has remained steadfast in its commitment to advancing scholarship, research, and intellectual discourse, making a significant contribution to the country’s academic and educational heritage.",
+    "p2": "Among the Foundation’s most distinguished achievements are its scholarly publications. To date, it has produced more than forty-eight high-quality academic and research-based works that have earned recognition as authoritative references among scholars, researchers, and intellectual circles.",
+    "p3": "However, the identity of Majlis-e-Ilmi extends far beyond its publishing endeavors. Its library stands as one of Pakistan’s most respected and enduring centers of learning and research. For decades, it has served as a valuable intellectual resource for scholars, academics, students, writers, and researchers.",
+    "collectionTitle": "An Invaluable Collection",
+    "collectionDesc": "The Majlis-e-Ilmi Library houses an invaluable collection of more than 30,000 rare and significant volumes in Urdu, Arabic, Persian, and English. This extensive repository encompasses a wide spectrum of disciplines, including:",
+    "p4": "As a result, the library has earned a distinguished reputation as a leading center for academic research and scholarship. More than 700 faculty members, researchers, and students from universities and religious institutions across Pakistan have successfully completed M.Phil. and Ph.D. research projects with the support of its resources. The Foundation continues to provide academic guidance and research assistance with the same vigor and dedication that have characterized its mission for decades.",
+    "p5": "Eminent religious scholars representing diverse schools of thought, distinguished intellectuals, university professors, literary figures, poets, researchers, political and religious leaders, legal professionals, judges, and government officials have all benefited from its rich scholarly resources and research facilities."
+  },
+  "GalleryPage": {
+    "title": "Campus Gallery",
+    "desc": "Explore the vibrant moments that make our library special — from rare manuscripts to the reading rooms.",
+    "viewImage": "View Image"
+  },
+  "Contact": {
     "title": "Contact Us",
     "subtitle": "Whether you are a researcher, a student, or simply a lover of books, our doors are open to you.",
     "infoTitle": "Get in Touch",
@@ -100,7 +139,8 @@
     "fMessagePlace": "How can we help you?",
     "fBtn": "Send Message"
   },
-    "Footer": {
+     "Footer": {
+    "brandName": "Majlis-e-Ilmi Foundation",
     "desc": "A research and reference education organization dedicated to preserving intellectual heritage and fostering a culture of reading and scholarship.",
     "followUs": "Follow Us",
     "quickLinks": "Quick Links",
@@ -110,9 +150,12 @@
     "gallery": "Gallery",
     "contact": "Contact Us",
     "contactTitle": "Contact Info",
+    "libName": "Majlis-e-Ilmi Research Library",
     "address": "Al-Madina Garden, Mezzanine floor, Near PSO Pump, Jamshed Road, No.2, Karachi, Pakistan",
     "rights": "Majlis-e-Ilmi Foundation. All rights reserved."
   },
-      "followUs": "Follow Us",
-    "quickLinks": "Quick Links"
-} 
+  "Publications": {
+    "headerTitle": "Our Publications",
+    "headerDesc": "Explore over 48 scholarly works published by the Majlis-e-Ilmi Foundation, recognized as authoritative references across Pakistan."
+  }
+}

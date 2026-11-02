@@ -11,6 +11,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const t = useTranslations("Navbar");
+  const tFooter = useTranslations("Footer"); 
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -26,25 +27,34 @@ export default function Navbar() {
   return (
     <>
       <header className="sticky top-0 z-50 w-full bg-brand-emerald shadow-md">
-        <div className="relative mx-auto flex h-24 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        {/* Increased max-width to 1600px to give elements plenty of room */}
+        <div className="mx-auto flex h-24 max-w-[1600px] items-center justify-between px-4 sm:px-6 lg:px-8">
           
-          {/* Left: Big Logo (Visible on all screens) */}
-          <div className="flex items-center">
-            <Link href="/" className="group">
+          {/* Left: Logo and Organization Name */}
+          <div className="flex w-1/3 items-center justify-start">
+            <Link href="/" className="group flex items-center gap-2 lg:gap-3">
               <img 
                 src="/logo.jpeg" 
                 alt="Logo" 
-                className="w-14 h-14 md:w-16 md:h-16 object-cover rounded-full border-2 border-brand-gold shadow-sm group-hover:scale-105 transition-transform" 
+                className="w-10 h-10 lg:w-12 lg:h-12 object-cover rounded-full border-2 border-brand-gold shadow-sm group-hover:scale-105 transition-transform shrink-0" 
               />
+              <div className="flex flex-col">
+                {/* Reduced text size on medium screens so it doesn't push the PillNav */}
+                <span className="font-serif font-bold text-xs sm:text-sm xl:text-base text-white leading-tight">
+                  {tFooter("brandName")}
+                </span>
+                <span className="text-[9px] lg:text-[10px] tracking-widest text-brand-gold uppercase">
+                  Since 1931
+                </span>
+              </div>
             </Link>
           </div>
 
-          {/* Center: Desktop PillNav (No logo inside it) */}
-          <div className="absolute left-1/2 hidden -translate-x-1/2 md:block">
+          {/* Center: Desktop PillNav (Using flex-1 to center it perfectly) */}
+          <div className="hidden md:flex flex-1 justify-center">
             <PillNav
               items={navItems}
               activeHref={pathname}
-              // No logo prop here! It's just the links.
               linkComponent={Link}
               theme="dark" 
               size="md"
@@ -58,18 +68,18 @@ export default function Navbar() {
             />
           </div>
 
-          {/* Right: Language Toggle (Desktop) */}
-          <div className="ml-auto hidden md:block">
-            <LanguageToggle />
+          {/* Right: Language Toggle & Mobile Button */}
+          <div className="flex w-1/3 items-center justify-end">
+            <div className="hidden md:block">
+              <LanguageToggle />
+            </div>
+            <button 
+              className="md:hidden text-white p-2"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
           </div>
-
-          {/* Right: Hamburger Button (Mobile) */}
-          <button 
-            className="md:hidden text-white p-2"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
 
         </div>
       </header>

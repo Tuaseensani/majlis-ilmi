@@ -25,7 +25,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mb-6 text-sm font-semibold uppercase tracking-[0.3em] text-brand-gold"
           >
-            Research and Reference Education
+            {t("tagline")}
           </motion.p>
           
           <motion.h1 

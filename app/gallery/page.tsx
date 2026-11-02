@@ -5,10 +5,12 @@ import FadeIn from "../../components/FadeIn";
 import { Camera, X } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function GalleryPage() {
-  // Put your actual image file names here
-   const images = [
+  const t = useTranslations("GalleryPage");
+  
+  const images = [
     "/hero-1.jpeg", 
     "/hero-2.jfif",
     "/hero-3.jfif",
@@ -20,7 +22,6 @@ export default function GalleryPage() {
     
   ];
 
-  // State to track which image is currently opened in the lightbox
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
@@ -36,9 +37,9 @@ export default function GalleryPage() {
                 <Camera size={40} />
               </div>
             </div>
-            <h1 className="mb-6 font-serif text-5xl font-bold md:text-6xl">Campus Gallery</h1>
+            <h1 className="mb-6 font-serif text-5xl font-bold md:text-6xl">{t("title")}</h1>
             <p className="text-lg text-emerald-100 leading-relaxed md:text-xl">
-              Explore the vibrant moments that make our library special — from rare manuscripts to the reading rooms.
+              {t("desc")}
             </p>
           </FadeIn>
         </div>
@@ -62,7 +63,7 @@ export default function GalleryPage() {
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 bg-brand-emerald/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <p className="text-white font-serif text-xl font-bold tracking-wider">
-                      View Image
+                      {t("viewImage")}
                     </p>
                   </div>
                 </div>
@@ -82,7 +83,6 @@ export default function GalleryPage() {
             onClick={() => setSelectedImage(null)}
             className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm cursor-zoom-out"
           >
-            {/* Close Button */}
             <button 
               className="absolute top-6 right-6 text-white hover:text-brand-gold transition-colors"
               onClick={() => setSelectedImage(null)}
@@ -90,7 +90,6 @@ export default function GalleryPage() {
               <X size={40} />
             </button>
 
-            {/* The Full Image */}
             <motion.img
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -99,7 +98,7 @@ export default function GalleryPage() {
               src={selectedImage}
               alt="Enlarged Gallery Image"
               className="max-h-[90vh] max-w-full rounded-lg shadow-2xl object-contain"
-              onClick={(e) => e.stopPropagation()} // Prevents clicking the image from closing the lightbox
+              onClick={(e) => e.stopPropagation()}
             />
           </motion.div>
         )}

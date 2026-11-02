@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { Mail, MapPin, Phone } from "lucide-react"; // Removed FacebookIcon and InstagramIcon
+import { Mail, MapPin, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
+
 export default function Footer() {
   const t = useTranslations("Footer");
 
@@ -20,8 +21,8 @@ export default function Footer() {
                 className="w-14 h-14 object-cover rounded-full shadow-sm ring-2 ring-brand-gold group-hover:ring-white transition-all" 
               />
               <div className="flex flex-col">
-                <span className="font-serif font-bold text-lg md:text-xl text-white leading-tight">
-                  Majlis-e-Ilmi Foundation
+                <span className="font-serif font-bold text-xl text-white leading-tight">
+                  {t("brandName")}
                 </span>
                 <span className="text-xs tracking-widest text-brand-gold uppercase">
                   Since 1931
@@ -32,7 +33,6 @@ export default function Footer() {
               {t("desc")}
             </p>
             {/* Social Icons */}
-                        {/* Social Icons */}
             <div className="flex items-center gap-4">
               <span className="text-sm font-semibold text-brand-gold uppercase tracking-wider">
                 {t("followUs")}
@@ -45,7 +45,6 @@ export default function Footer() {
                   className="bg-white/10 p-2 rounded-full hover:bg-brand-gold hover:text-brand-emerald transition-all"
                   aria-label="Facebook"
                 >
-                  {/* Facebook SVG */}
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                   </svg>
@@ -57,7 +56,6 @@ export default function Footer() {
                   className="bg-white/10 p-2 rounded-full hover:bg-brand-gold hover:text-brand-emerald transition-all"
                   aria-label="Instagram"
                 >
-                  {/* Instagram SVG */}
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -92,17 +90,18 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-brand-gold transition-colors"
                 >
-                  {t("address")}
+                  <span className="font-bold block mb-1">{t("libName")}</span>
+                  <span className="text-sm">{t("address")}</span>
                 </a>
               </li>
               <li className="flex items-start gap-3 text-blue-100/80">
                 <Phone size={20} className="text-brand-gold shrink-0 mt-1" />
-                <div className="flex flex-col" dir="ltr">
+                <div className="flex flex-col text-sm" dir="ltr">
                   <span>+92 21 349 13 953</span>
                   <span>+92 21 348 60 959</span>
                 </div>
               </li>
-              <li className="flex items-center gap-3 text-blue-100/80">
+              <li className="flex items-center gap-3 text-blue-100/80 text-sm">
                 <Mail size={20} className="text-brand-gold shrink-0" />
                 <span>info@majlisilmi.org</span>
               </li>
